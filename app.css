@@ -83,6 +83,108 @@ h2{
     padding: 1.5rem 0 0 0;
 }
 
+.audio-player {
+    width: 200px;
+    background-color: rgba(172, 190, 163, .25);
+    color: #fff;
+    padding: .5rem 1rem .5rem;
+    border-radius: 1rem;
+    font-family: sans-serif;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.controls svg{
+    fill: #40476D;
+}
+
+.progress-container {
+    position: relative;
+    height: 6px;
+    background: #444;
+    cursor: pointer;
+    margin: 10px 0;
+    border-radius: 3px;
+}
+
+.progress {
+    height: 100%;
+    background: #00cc88;
+    width: 0%;
+    border-radius: 3px;
+}
+
+.time {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-top: -5px;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    border-radius: 5px;
+    outline: none;
+    background-color: #EB6534;
+}
+
+/* Estilo da barra preenchida (no Chrome) */
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 6px;
+  background: #AD5D4E;
+  border-radius: 5px;
+}
+
+/* Estilo do "thumb" (bolinha) no Chrome */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  background: #40476D;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -4px; /* Alinha verticalmente com a barra */
+}
+
+/* Firefox */
+input[type="range"]::-moz-range-track {
+  height: 6px;
+  background: #ccc;
+  border-radius: 5px;
+}
+
+input[type="range"]::-moz-range-progress {
+  background: #EB6534;
+  height: 6px;
+  border-radius: 5px;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  background: #EB6534;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+button {
+    background: none;
+    color: #EB6534;
+    padding: 1rem;
+    cursor: pointer;
+    border: transparent;
+}
+
 
 @media (min-width: 768px) {
     .block-countdown .countdown {
