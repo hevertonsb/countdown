@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: "Love Ya Like A Sister", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+::selection {
+    color: #fff;
+    background-color: #EB6534;
+}
+
+.app{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('06c33348-a502-46ad-b0d8-f7fb40173f34.png') no-repeat center;
+    background-size: cover;
+}
+
+h2{
+    font-size: 9rem;
+    color: #40476D;
+    font-family: "Lovers Quarrel", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.block-countdown {
+    max-width: 60rem;
+    width: 100%;
+    z-index: 2;
+    text-align: center;
+    padding: 3rem;
+    background-color: rgba(172, 190, 163, .85);
+    border-radius: 1rem;
+    margin: 0 2rem;
+}
+
+.block-countdown .countdown {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 58rem;
+    gap: 2rem;
+    margin: 5rem auto;
+}
+
+.block-countdown .countdown .day, 
+.block-countdown .countdown .hour, 
+.block-countdown .countdown .min, 
+.block-countdown .countdown .sec {
+    color: #EB6534;
+    text-align: center;
+    min-width: 8rem;
+}
+
+.block-countdown .countdown .day .num, 
+.block-countdown .countdown .hour .num, 
+.block-countdown .countdown .min .num, 
+.block-countdown .countdown .sec .num {
+    display: block;
+    font-size: 3.5rem;
+    line-height: 1em;
+    font-weight: 700;
+}
+
+.block-countdown .countdown .day .word, 
+.block-countdown .countdown .hour .word, 
+.block-countdown .countdown .min .word, 
+.block-countdown .countdown .sec .word {
+    display: block;
+    font-size: 2rem;
+    padding: 1.5rem 0 0 0;
+}
+
+
+@media (min-width: 768px) {
+    .block-countdown .countdown {
+        justify-content: space-between;
+    }
+
+    .block-countdown .countdown .day .num, 
+    .block-countdown .countdown .hour .num, 
+    .block-countdown .countdown .min .num, 
+    .block-countdown .countdown .sec .num {
+        font-size: 5.5rem;
+    }
+}
